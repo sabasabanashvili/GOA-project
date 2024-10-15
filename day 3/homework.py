@@ -514,5 +514,10 @@ right(30)
 forward(300)
 left(90)
 forward(30)
+penup()
+goto(-200,-300)
+forward(300)
+
+
 
 exitonclick()
