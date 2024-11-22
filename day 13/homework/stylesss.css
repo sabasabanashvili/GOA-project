@@ -1,9 +1,8 @@
-* {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
+
 
 body {
+    background-image: url(download2.jpg);
+    background-size: 2000px;
     color: #333;
     font-size: 16px;
     line-height: 1.6;

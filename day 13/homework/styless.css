@@ -1,4 +1,6 @@
 body {
+    background-image: url('download1.jpg');
+    background-size: 2000px;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
