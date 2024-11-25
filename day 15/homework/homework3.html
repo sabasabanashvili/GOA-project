@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: #f1f1f1;
+        }
+
+        .container{
+            border: solid 1px rgb(0, 0, 0);
+            background-color: #d7d7d7;
+            padding: 20px auto;
+            margin: 20px auto;
+            width: 500px;
+            height: 500px;
+        }
+
+        .container p{
+            text-align: center;
+            font-size: 1.2em;
+        }
+        </style>
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1><center>Registration Form</center></h1>
+        <form>
+            <center>
+            <label for="name">Username     </label>
+            <input type="text" id="name" name="name" placeholder="Enter your username" required><br><br>
+            <label for="text">Second name      </label>
+            <input type="text" id="text" name="text" placeholder="Enter your Surname" required><br><br>
+            <label for="Nickname">Nickname     </label>
+            <input type="text" id="Nickname" name="Nickname" placeholder="Enter your Nickname" required><br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+            <label for="password">Password     </label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+            <label for="date">Date of birth    </label>
+            <input type="date" id="date" name="date" required><br><br>
+            <label for="gender">Gender</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female    </label><br><br>
+            <label for="phone">Phone     </label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone" required><br><br>
+            <label for="address">Adress</label>
+            <input type="text" id="address" name="address" placeholder="Enter your address" required><br><br>
+            <input type="submit" value="Submit">   <input type="reset" value="Reset">
+        </center>
+        </form>
+    </div>
+</body>
+</html>
