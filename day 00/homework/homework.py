@@ -1,3 +1,3 @@
 
-while bro != 5:
-    print("imglol")
+while 1 != 5:
+    print("imglolsvsvyvyuscdyctytuvsvuyvuhluvhydvlhuvdsvuvulvduyhdbuivhdbuibidbibuiduibdpiubdsoi[hioupbdubdubp]")
