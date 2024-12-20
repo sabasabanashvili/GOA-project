@@ -1,9 +1,10 @@
-num = int(input("enter Ur number: "))
-if num < 2: print("Not prime")
+num1 = int(input("Enter a number: "))
+is_valid = True
+for i in range(2, num1):
+    if num1 % i == 0:
+        is_valid = False
+
+if is_valid == True:
+    print("Prime")
 else:
-    for i in range(2, num):
-        if num % i == 0:
-            print("Not prime")
-            break
-    else:
-        print("Prime")
+    print("Not Prime")
