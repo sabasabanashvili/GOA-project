@@ -8,3 +8,6 @@ if num1 > num2:
 
 elif num2 > num1:
     print(my_list[num1:num2])
+
+else:
+    print("num1 და num2 ერთიანია")
