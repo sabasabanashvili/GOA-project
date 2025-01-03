@@ -5,3 +5,6 @@ print(list[0:3])
 print(list[-1:-6:-1])
 print(list[::-1])
 print(list[0:11:3])
+
+print(list[:4])
+print(list[4:])
