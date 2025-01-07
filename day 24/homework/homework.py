@@ -8,3 +8,5 @@ print(list[0:11:3])
 
 print(list[:4])
 print(list[4:])
+
+range(5)
