@@ -15,9 +15,9 @@ h1 {
     0px 0px 80px blue;
     } 
  /* headings end */
- p {
+    p {
     text-align: center;
- }
+}
  /* image designs */
 .imgs {
     display: flex;
@@ -80,17 +80,17 @@ h1 {
     text-align: center;
     color: azure;
     text-shadow: 0px 0px 10px yellow,
-                    0px 0px 20px yellow,
-                    0px 0px 40px yellow,
-                    0px 0px 80px yellow;
-    }
+    0px 0px 20px yellow,
+    0px 0px 40px yellow,
+    0px 0px 80px yellow;
+}
     h2 {
     text-align: center;
     text-shadow: 0px 0px 10px blue,
-                    0px 0px 20px blue,
-                    0px 0px 40px blue,
-                    0px 0px 80px blue;
-    } 
+    0px 0px 20px blue,
+    0px 0px 40px blue,
+    0px 0px 80px blue;
+} 
     /* headings end */
     p {
     text-align: center;

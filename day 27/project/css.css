@@ -29,10 +29,10 @@ header {
 }
 
 header .logo img {
-border-radius: 25px;
-padding: 20px; 
-width: 40px;
-height: 40px; 
+    border-radius: 25px;
+    padding: 20px; 
+    width: 40px;
+    height: 40px; 
 }
 
 nav ul {
