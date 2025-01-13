@@ -1,0 +1,14 @@
+/* ელემენტის სელექტორი */
+h1 {
+    color: blue;
+}
+
+  /* class სელექტორი */
+.highlight {
+    color: green;
+}
+
+  /* id სელექტორი */
+#unique-element {
+    color: purple;
+}
