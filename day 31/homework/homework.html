@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML</title>
+    <style>
+        /* Paragraph styles */
+        p:nth-child(1) { color: rgb(255, 0, 0); background-color: rgb(255, 200, 200); }
+        p:nth-child(2) { color: rgb(0, 255, 0); background-color: rgb(200, 255, 200); }
+        p:nth-child(3) { color: rgb(0, 0, 255); background-color: rgb(200, 200, 255); }
+        p:nth-child(4) { color: rgb(255, 255, 0); background-color: rgb(255, 255, 200); }
+        p:nth-child(5) { color: rgb(255, 0, 255); background-color: rgb(255, 200, 255); }
+        p:nth-child(6) { color: #00FFFF; background-color: #CCFFFF; }
+        p:nth-child(7) { color: #FF6600; background-color: #FFD4B0; }
+        p:nth-child(8) { color: #990099; background-color: #F5CCF5; }
+        p:nth-child(9) { color: #006600; background-color: #CCFFCC; }
+        p:nth-child(10) { color: #0000FF; background-color: #CCCCFF; }
+
+        /* Parent div styles */
+        .parent-div {
+            width: 1000px;
+            height: 1000px;
+            background-color: #008000; /* Green */
+            position: relative;
+        }
+
+        /* Child div styles */
+        .child-div {
+            width: 200px; /* 20% of 1000px */
+            height: 150px; /* 15% of 1000px */
+            background-color: #000000; /* Black */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* 10 div blocks with unique colors */
+        .unique-div {
+            width: 120px;
+            height: 120px;
+            margin: 10px;
+            display: inline-block;
+        }
+        .unique-div:nth-child(1) { background-color: #FF0000; }
+        .unique-div:nth-child(2) { background-color: #00FF00; }
+        .unique-div:nth-child(3) { background-color: #0000FF; }
+        .unique-div:nth-child(4) { background-color: #FFFF00; }
+        .unique-div:nth-child(5) { background-color: #FF00FF; }
+        .unique-div:nth-child(6) { background-color: #00FFFF; }
+        .unique-div:nth-child(7) { background-color: #FF9900; }
+        .unique-div:nth-child(8) { background-color: #9900FF; }
+        .unique-div:nth-child(9) { background-color: #009900; }
+        .unique-div:nth-child(10) { background-color: #333333; }
+    </style>
+</head>
+<body>
+    <!-- 10 paragraphs with different colors -->
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+    <p>Paragraph 4</p>
+    <p>Paragraph 5</p>
+    <p>Paragraph 6</p>
+    <p>Paragraph 7</p>
+    <p>Paragraph 8</p>
+    <p>Paragraph 9</p>
+    <p>Paragraph 10</p>
+
+    <!-- Parent and child div blocks -->
+    <div class="parent-div">
+        <div class="child-div"></div>
+    </div>
+
+    <!-- 10 unique div blocks -->
+    <div class="unique-div"></div>
+    <div class="unique-div"></div>
+    <div class="unique-div"></div>
+    <div class="unique-div"></div>
+    <div class="unique-div"></div>
+    <div class="unique-div"></div>
+    <div class="unique-div"></div>
+    <div class="unique-div"></div>
+    <div class="unique-div"></div>
+    <div class="unique-div"></div>
+</body>
+</html>

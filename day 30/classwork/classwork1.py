@@ -20,7 +20,6 @@ def manual_find(main_string, str_to_find):
 
     return -1
 
-# Testing
 print(manual_find("hello world", "world"))  # 6
 print(manual_find("hello world", "python"))  # -1
 print(manual_find("abcdef", "def"))  # 3

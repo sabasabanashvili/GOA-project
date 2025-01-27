@@ -4,4 +4,4 @@ print(string.find("hello"))
 #Write a function that returns the index of a character provided by the user in a string.
 def find_index(string, char):
     return string.find(char)
-print(find_index("hello world, hello everyone", "eh"))
+print(find_index("hello world, hello everyone", "e"))

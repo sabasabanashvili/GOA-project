@@ -7,6 +7,6 @@ def manual_swapcase(text):
             result += char.lower()
         else:
             result += char
-    print(result)  # შედეგის დაბეჭდვა ფუნქციის შიგნით
+    print(result) 
 
-manual_swapcase("Hello World!") 
+manual_swapcase("Hello World!")
