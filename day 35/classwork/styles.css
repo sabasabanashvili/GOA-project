@@ -1,0 +1,22 @@
+/* საერთო სტილები */
+a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: normal;
+    color: rgb(0, 0, 255); /* ლურჯი */
+    transition: all 0.3s ease;
+}
+
+/* hover მოვლენა */
+a:hover {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(255, 0, 0); /* წითელი */
+}
+
+/* active მოვლენა */
+a:active {
+    font-size: 16px;
+    font-weight: lighter;
+    color: rgb(0, 128, 0); /* მწვანე */
+}

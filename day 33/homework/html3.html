@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling Examples</title>
+    <style>
+        /* 5) Line Through Text: Strike through the text inside <span> elements */
+        span {
+            text-decoration: line-through;
+        }
+
+        /* 6) Combined Decorations: Apply both underline and overline to all <h2> elements */
+        h2 {
+            text-decoration: underline overline;
+        }
+
+        /* 7) Dashed Underline: Create a dashed underline effect for all <a> tags */
+        a {
+            text-decoration: underline dashed;
+        }
+
+        /* 8) Wavy Line: Use a wavy text decoration for a warning message <p class="warning"> */
+        .warning {
+            text-decoration: underline wavy red;
+        }
+
+        /* 9) Case Styling for Navigation Menus: Use text-transform to style navigation links with uppercase text */
+        nav a {
+            text-transform: uppercase;
+        }
+
+        /* 10) Basic Shadow: Apply a shadow to headings for a slight lifted effect */
+        h1, h2 {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 11) Bold Shadow: Add a strong black shadow to make text pop against a light background */
+        h3 {
+            text-shadow: 4px 4px 6px black;
+        }
+
+        /* 12) Blurred Shadow: Create a soft, blurred shadow for paragraph text */
+        p {
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        /* 13) Colored Shadow: Add a colored shadow (e.g., red or blue) to emphasize specific text */
+        .highlighted {
+            text-shadow: 3px 3px 5px red;
+        }
+
+        /* 14) Import and Apply a Single Font: Use @import to include a Google Font (e.g., Roboto) and apply it to all paragraph text */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        p {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* 15) Multiple Font Imports: Import two different fonts using @import and assign one to headings and the other to body text */
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        h1, h2 {
+            font-family: 'Open Sans', sans-serif;
+        }
+        p {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* 16) Font Pairing Showcase: Use @import to load two complementary fonts (e.g., a serif for headings and a sans-serif for body text) */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+        }
+        p {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Heading with Basic Shadow</h1>
+    <h2>Heading with Combined Decorations</h2>
+    <h3>Heading with Bold Shadow</h3>
+
+    <p>This is a paragraph with blurred shadow effect.</p>
+    <p class="warning">This is a warning paragraph with a wavy underline.</p>
+    <p class="highlighted">This text has a red colored shadow to make it stand out.</p>
+
+    <nav>
+        <a href="#">Home</a> | 
+        <a href="#">About</a> | 
+        <a href="#">Services</a> | 
+        <a href="#">Contact</a>
+    </nav>
+
+    <span>This is a span with strike-through text.</span>
+
+</body>
+</html>
