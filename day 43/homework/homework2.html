@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, footer {
+            padding: 20px;
+            font-weight: bold;
+        }
+        header {
+            background-color: #ff4500;
+        }
+        footer {
+            background-color: #ff1493;
+        }
+        .content {
+            display: flex;
+            flex: 1;
+        }
+        .left-sidebar, .right-sidebar {
+            flex: 1;
+            padding: 20px;
+        }
+        .left-sidebar {
+            background-color: #1e90ff;
+        }
+        .right-sidebar {
+            background-color: #228b22;
+        }
+        .main-content {
+            flex: 2;
+            background-color: #4b0082;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>HEADER</header>
+        <div class="content">
+            <div class="left-sidebar">LEFT SIDEBAR</div>
+            <div class="main-content">MAIN CONTENT</div>
+            <div class="right-sidebar">RIGHT SIDEBAR</div>
+        </div>
+        <footer>FOOTER</footer>
+    </div>
+
+</body>
+</html>
