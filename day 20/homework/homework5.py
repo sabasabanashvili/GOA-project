@@ -21,4 +21,3 @@ print(list[16])
 print(list[17])
 print(list[18])
 print(list[19])
-
