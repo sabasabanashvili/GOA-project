@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Functions Example</title>
+  <style>
+    button {
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>JavaScript Functions Demo</h1>
+
+  <p id="myParagraph">Original paragraph text.</p>
+
+  <button onclick="showAlert()">2. Show Alert</button>
+  <button onclick="greet('Alice')">3. Greet Alice</button>
+  <button onclick="alert('4. Sum: ' + addNumbers(5, 10))">4. Add 5 + 10</button>
+  <button onclick="alert('5. Multiplied: ' + multiplyByTen(3))">5. Multiply 3 by 10</button>
+  <button onclick="sayHello()">8. Say Hello</button>
+  <button onclick="sayGoodbye()">8. Say Goodbye</button>
+  <button onclick="changeParagraphText()">9. Change Paragraph Text</button>
+
+  <script>
+    // 2
+    function showAlert() {
+      alert("Hello, world!");
+    }
+
+    // 3
+    function greet(name) {
+      console.log(`Hello, ${name}!`);
+    }
+
+    // 4
+    function addNumbers(a, b) {
+      return a + b;
+    }
+
+    // 5
+    function multiplyByTen(num) {
+      return num * 10;
+    }
+
+    // 8 - Multiple functions
+    function sayHello() {
+      alert("Hello!");
+    }
+
+    function sayGoodbye() {
+      alert("Goodbye!");
+    }
+
+    // 9 - Change paragraph text
+    function changeParagraphText() {
+      document.getElementById("myParagraph").textContent = "Text has been changed!";
+    }
+  </script>
+
+</body>
+</html>

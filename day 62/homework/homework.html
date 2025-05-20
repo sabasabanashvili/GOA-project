@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Manipulation Example</title>
+  <style>
+    /* Some basic styling for visibility */
+    #header, #description, #footer, #title, #greeting, #note, #heading, #box, #paragraph {
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="header">Header Content</div>
+  <div id="description">This is the description.</div>
+  <div id="footer">Footer goes here.</div>
+  <div id="title">Page Title</div>
+  <div id="greeting">Hello!</div>
+  <div id="note">Some note here.</div>
+  <div id="heading">Heading Text</div>
+  <div id="box">Box Content</div>
+  <div id="paragraph">This is a paragraph.</div>
+
+  <script>
+    // 2) Get the HTML element with the ID header and store it in a variable
+    let header = document.getElementById("header");
+
+    // 3) Use getElementById to find the element with the ID description
+    let description = document.getElementById("description");
+
+    // 4) Retrieve the element with the ID footer and assign it to a variable named footerElement
+    let footerElement = document.getElementById("footer");
+
+    // 5) Get the text content of the element with the ID title and store it in a variable
+    let titleText = document.getElementById("title").textContent;
+
+    // 6) Change the text content of the element with the ID greeting to say "Welcome!"
+    document.getElementById("greeting").textContent = "Welcome!";
+
+    // 7) Set the text content of the element with the ID note to be empty
+    document.getElementById("note").textContent = "";
+
+    // 8) Change the text color of the element with the ID heading to red
+    document.getElementById("heading").style.color = "red";
+
+    // 9) Set the background color of the element with the ID box to yellow
+    document.getElementById("box").style.backgroundColor = "yellow";
+
+    // 10) Make the font size of the element with the ID paragraph equal to 20px
+    document.getElementById("paragraph").style.fontSize = "20px";
+  </script>
+
+</body>
+</html>
