@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8" />
+<title>User Loop</title>
+</head>
+<body>
+
+<script>
+function userLoop() {
+  let num1 = Number(prompt("შეიყვანეთ პირველი რიცხვი"));
+  let num2 = Number(prompt("შეიყვანეთ მეორე რიცხვი"));
+
+  if (num1 > num2) {
+    // თუ num1 მეტია, ჩავწეროთ ასვლა უკან
+    for (let i = num1; i >= num2; i--) {
+      console.log(i);
+    }
+  } else {
+    for (let i = num1; i <= num2; i++) {
+      console.log(i);
+    }
+  }
+}
+
+// ფუნქცია ავტომატურად გამოიძახება, როცა გვერდი იტვირთება
+window.onload = userLoop;
+</script>
+
+</body>
+</html>

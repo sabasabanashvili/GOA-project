@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8" />
+<title>Discount Function</title>
+</head>
+<body>
+
+<button onclick="discountFunc()">გაანგარიშე ფასდაკლება</button>
+<p id="result"></p>
+
+<script>
+function discountFunc() {
+  const age = Number(prompt("შეიყვანეთ თქვენი ასაკი"));
+  let discount;
+
+  if (age < 18) {
+    discount = "20%";
+  } else if (age >= 18 && age < 65) {
+    discount = "5%";
+  } else {
+    discount = "10%";
+  }
+
+  document.getElementById("result").textContent = "ფასდაკლება: " + discount;
+}
+</script>
+
+</body>
+</html>

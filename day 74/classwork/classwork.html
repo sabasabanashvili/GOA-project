@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>საკლასო დავალება</title>
+  <style>
+    body {
+      transition: all 0.3s ease;
+    }
+    #centerText {
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. პარაგრაფი -->
+  <p id="centerText">დამაჯერე, რომ ტექსტი გაიწევს ცენტრში</p>
+
+  <!-- 2. ღილაკი -->
+  <button id="darkModeBtn">დააკლიკე</button>
+
+  <!-- 3. ლინკი -->
+  <a id="myLink" href="https://example.com" style="color: blue;">დაკლიკე ლინკზე</a>
+
+  <script>
+    // 1) პარაგრაფი — ცენტრში განლაგება mouseover-ზე
+    const paragraph = document.getElementById("centerText");
+    paragraph.onmouseover = function() {
+      paragraph.style.textAlign = "center";
+    };
+
+    // 2) ღილაკი — დაკლიკებაზე ფონის და ტექსტის ფერის შეცვლა + კონსოლში event
+    const button = document.getElementById("darkModeBtn");
+    button.addEventListener("click", function(event) {
+      console.log(event);
+      document.body.style.backgroundColor = "black";
+      document.body.style.color = "white";
+    });
+
+    // 3) ლინკი — pointerover-ზე ატრიბუტების დაბეჭდვა
+    const link = document.getElementById("myLink");
+    link.addEventListener("pointerover", function(e) {
+      const attrs = e.target.attributes;
+      for (let attr of attrs) {
+        console.log(attr.name + " = " + attr.value);
+      }
+      console.log("Target:", e.target);
+    });
+  </script>
+
+</body>
+</html>

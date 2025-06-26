@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>დავალება - ღილაკის დამატება</title>
+</head>
+<body>
+
+  <!-- დივ ბლოკი უნიკალური ID-ით -->
+  <div id="myDiv"></div>
+
+  <!-- ღილაკი ფუნქციის გამოსაძახებლად -->
+  <button onclick="addNewElement()">დაამატე ღილაკი</button>
+
+  <!-- JavaScript კოდი -->
+  <script>
+    function addNewElement() {
+      const div = document.getElementById("myDiv");
+
+      const newButton = document.createElement("button");
+
+      const text = document.createTextNode("ახალი ღილაკი");
+
+      newButton.appendChild(text);
+
+      
+      div.appendChild(newButton);
+    }
+  </script>
+
+</body>
+</html>
