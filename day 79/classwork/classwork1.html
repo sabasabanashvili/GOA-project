@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background: red;
+      border-radius: 20px;
+      margin: 10px;
+      position: relative;
+      transition: left 1s;
+    }
+  </style>
+</head>
+<body>
+
+<!-- 5 დივი -->
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+
+<script>
+  const boxes = document.querySelectorAll('.box');
+
+  // ყველა დივი მარჯვნივ გადავა 300px-ით
+  boxes.forEach(box => {
+    box.style.left = '300px';
+  });
+</script>
+
+</body>
+</html>
