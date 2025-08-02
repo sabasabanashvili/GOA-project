@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Homework</title>
+  <style>
+    .circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: purple;
+      position: absolute;
+    }
+    #box {
+      width: 50px;
+      height: 50px;
+      background: lightcoral;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <h1>Main Heading</h1>
+  <h3>Sub Heading</h3>
+
+  <p>This is a paragraph with a few words to count.</p>
+  <p>Another one.</p>
+
+  <img src="https://via.placeholder.com/150" alt="cat image">
+  <img src="https://via.placeholder.com/150" alt="dog image">
+
+  <ul>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+    <li>List item 4</li>
+  </ul>
+
+  <div id="box"></div>
+  <button id="moveBtn">Move Box</button>
+
+  <div id="hideDiv" style="width:100px;height:100px;background:lightgreen;margin-top:20px;">
+    Will hide & reveal
+  </div>
+  <button id="hideBtn">Hide & Reveal</button>
+
+  <input type="text" id="textInput" placeholder="Type up to 20 chars...">
+
+  <script>
+    // Homework 1: Heading Formatter
+    document.querySelectorAll('h1, h3').forEach(el => {
+      el.style.color = 'green';
+      el.style.border = '1px solid black';
+      el.style.fontSize = el.tagName === 'H1' ? '30px' : '24px';
+    });
+
+    // Homework 2: Paragraph Word Counter
+    document.querySelectorAll('p').forEach((p, i) => {
+      const count = p.textContent.trim().split(/\s+/).filter(w => w).length;
+      console.log(\`Paragraph \${i+1} has \${count} words\`);
+    });
+
+    // Homework 3: Image Gallery Resize
+    document.querySelectorAll('img').forEach(img => {
+      img.style.width = '200px';
+      img.style.borderRadius = '10px';
+      if (img.alt.toLowerCase().includes('cat')) {
+        img.style.border = '2px solid orange';
+      }
+    });
+
+    // Homework 4: Animate Circles
+    for (let i = 0; i < 3; i++) {
+      const c = document.createElement('div');
+      c.classList.add('circle');
+      c.style.top = (i * 60) + 'px';
+      c.style.left = '0px';
+      document.body.appendChild(c);
+      setInterval(() => {
+        c.style.left = (parseInt(c.style.left) + 10) + 'px';
+      }, 200);
+    }
+
+    // Homework 5: List Alternating Color
+    document.querySelectorAll('li').forEach((li, i) => {
+      li.style.background = i % 2 === 0 ? 'skyblue' : 'lightgray';
+    });
+
+    // Homework 6: Interactive Box Movement
+    const box = document.getElementById('box');
+    document.getElementById('moveBtn').addEventListener('click', () => {
+      box.style.left = ((parseInt(box.style.left) || 0) + 20) + 'px';
+      box.style.background = '#' + Math.floor(Math.random()*16777215).toString(16);
+    });
+
+    // Homework 7: Form Input Length Warning
+    const ti = document.getElementById('textInput');
+    ti.addEventListener('input', () => {
+      ti.style.background = ti.value.length > 20 ? 'red' : 'white';
+    });
+
+    // Homework 8: Dynamic Message List
+    const msgList = document.createElement('ul');
+    document.body.appendChild(msgList);
+    let msgCount = 0;
+    const msgInterval = setInterval(() => {
+      msgCount++;
+      const li = document.createElement('li');
+      li.textContent = 'Message ' + msgCount;
+      msgList.appendChild(li);
+      if (msgCount >= 10) clearInterval(msgInterval);
+    }, 2000);
+
+    // Homework 9: Hide and Reveal
+    const hideDiv = document.getElementById('hideDiv');
+    document.getElementById('hideBtn').addEventListener('click', () => {
+      hideDiv.style.display = 'none';
+      setTimeout(() => hideDiv.style.display = 'block', 5000);
+    });
+
+    // Homework 10: Element Counter by Tag
+    window.addEventListener('load', () => {
+      const tag = prompt('Enter a tag name to count (e.g., div, p, img):');
+      if (tag) {
+        const count = document.getElementsByTagName(tag).length;
+        alert(\`There are \${count} <\${tag}> elements on this page.\`);
+      }
+    });
+  </script>
+</body>
+</html>

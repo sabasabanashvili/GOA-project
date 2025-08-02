@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<ul id="list"></ul>
+
+<script>
+let myObj = {
+    name: "David",
+    surname: "Tezelashvili",
+    academy: "GOA",
+    isMentor: true,
+    num: 100,
+    hobbies: ["programming", "bike", "basketball"],
+    favColor: "Blue"
+};
+
+let ul = document.getElementById("list");
+
+for (let key in myObj) {
+    ul.innerHTML += "<li>" + key + "</li>";
+    ul.innerHTML += "<li>" + myObj[key] + "</li>";
+}
+</script>
+
+</body>
+</html>
