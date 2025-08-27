@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Tasks 2-12</title>
+</head>
+<body>
+  <h1>JavaScript Tasks 2–12</h1>
+
+  <button id="confirmBtn">Click for Confirm Box</button>
+
+  <form id="userForm">
+    <input type="text" name="username" placeholder="Username">
+    <input type="email" name="email" placeholder="Email">
+    <input type="tel" name="phone" placeholder="Phone">
+    <button type="submit">Submit</button>
+  </form>
+
+  <button id="clearEmail">Clear Email</button>
+  <button id="alertPhone">Show Phone</button>
+
+  <script>
+    // 2–6: Comparison Operators
+    let num1 = 10;
+    let num2 = 10;
+    console.log("Are equal:", num1 == num2);
+
+    let a = 15;
+    let b = 10;
+    console.log("Is a > b:", a > b);
+
+    let x = 8;
+    let y = 12;
+    console.log("Is x <= y:", x <= y);
+
+    let m = 5;
+    let n = 10;
+    console.log("Are not equal:", m != n);
+
+    let value = 120;
+    console.log("Is value >= 100:", value >= 100);
+
+    // 7: Confirm box with console log
+    let result = confirm("Do you like JavaScript?");
+    console.log("User clicked:", result);
+
+    // 8: Confirm box on button click
+    document.getElementById("confirmBtn").onclick = function() {
+      let clickedResult = confirm("Do you want to continue?");
+      console.log("Button confirm result:", clickedResult);
+    };
+
+    // 9: Confirm box on page load with alert
+    window.onload = function() {
+      let onLoadResult = confirm("Are you ready to begin?");
+      alert("You clicked: " + onLoadResult);
+    };
+
+    // 10: On form submit, log username
+    document.getElementById("userForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      let username = document.querySelector('input[name="username"]').value;
+      console.log("Username:", username);
+    });
+
+    // 11: Clear email on button click
+    document.getElementById("clearEmail").onclick = function() {
+      document.querySelector('input[name="email"]').value = "";
+    };
+
+    // 12: Alert phone on button click
+    document.getElementById("alertPhone").onclick = function() {
+      let phone = document.querySelector('input[name="phone"]').value;
+      alert("Phone number: " + phone);
+    };
+  </script>
+</body>
+</html>

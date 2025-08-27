@@ -1,0 +1,11 @@
+div {
+    color: white;
+    background-color: #4CAF50;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+}

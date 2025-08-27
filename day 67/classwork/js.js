@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>საკლასო დავალება</title>
+  <script>
+    function userOperations() {
+      response1 = confirm("გსურთ პირველი არჩევანის დადასტურება?");
+      response2 = confirm("გსურთ მეორე არჩევანის დადასტურება?");
+
+      andResult = response1 && response2;
+      orResult = response1 || response2;
+
+
+      alert("AND ოპერაციის შედეგი: " + andResult);
+      alert("OR ოპერაციის შედეგი: " + orResult);
+    }
+
+    // ფუნქციის გამოძახება გვერდის ჩატვირთვისას
+    window.onload = userOperations;
+  </script>
+</head>
+<body>
+  <h1>საკლასო დავალება</h1>
+  <p>გთხოვთ, დაადასტურეთ არჩევანები, როდესაც გვერდი ჩაიტვირთება.</p>
+</body>
+</html>

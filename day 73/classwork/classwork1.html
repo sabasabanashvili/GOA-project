@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <div id="box">
+      <p id="text">ეს არის პარაგრაფი</p>
+      <button id="btn">ღილაკი</button>
+    </div>
+
+    <script>
+      window.onload = function() {
+        let div = document.getElementById("box");
+        let btn = document.getElementById("btn");
+        let p = document.getElementById("text");
+
+        div.removeChild(btn);
+
+        let i = document.createElement("i");
+        i.textContent = "ახალი ტექსტი i თეგში";
+
+        div.replaceChild(i, p);
+      }
+    </script>
+
+  </body>
+</html>

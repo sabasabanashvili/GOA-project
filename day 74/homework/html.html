@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Listeners</title>
+  <style>
+    #colorBox {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      margin: 10px 0;
+    }
+    #toggleImg {
+      width: 100px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Click Alert -->
+  <button id="alertBtn">Click Alert</button>
+
+  <!-- Change Text on Hover -->
+  <p id="hoverText">Hover over me</p>
+
+  <!-- Toggle Background Color -->
+  <div id="colorBox"></div>
+
+  <!-- Log Input Value on Click -->
+  <input type="text" id="logInput" placeholder="Click me" />
+
+  <!-- Show/Hide Image -->
+  <button id="toggleImgBtn">Show/Hide Image</button>
+  <img id="toggleImg" src="https://via.placeholder.com/100" alt="img" />
+
+  <script>
+    // Click Alert
+    document.getElementById("alertBtn").addEventListener("click", function() {
+      alert("Button clicked!");
+    });
+
+    // Change Text on Hover
+    document.getElementById("hoverText").addEventListener("mouseover", function() {
+      this.textContent = "You hovered!";
+    });
+
+    // Toggle Background Color
+    const box = document.getElementById("colorBox");
+    box.addEventListener("click", function() {
+      this.style.backgroundColor = this.style.backgroundColor === "lightblue" ? "lightcoral" : "lightblue";
+    });
+
+    // Log Input Value on Click
+    document.getElementById("logInput").addEventListener("click", function() {
+      console.log("Input value:", this.value);
+    });
+
+    // Show/Hide Image
+    const img = document.getElementById("toggleImg");
+    document.getElementById("toggleImgBtn").addEventListener("click", function() {
+      img.style.display = img.style.display === "none" ? "block" : "none";
+    });
+  </script>
+
+</body>
+</html>

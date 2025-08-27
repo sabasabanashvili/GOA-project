@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        background: #f0f4fc;
+        font-family: 'Segoe UI', sans-serif;
+        padding: 2rem;
+    }   
+
+    .testimonial-grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "daniel daniel jonathan kira"
+            "jeanette patrick patrick kira";
+    }
+
+        .testimonial-grid > .card:nth-child(1) { grid-area: daniel; }
+        .testimonial-grid > .card:nth-child(2) { grid-area: jonathan; }
+        .testimonial-grid > .card:nth-child(3) { grid-area: jeanette; }
+        .testimonial-grid > .card:nth-child(4) { grid-area: patrick; }
+        .testimonial-grid > .card:nth-child(5) { grid-area: kira; }
+
+
+    .card {
+        border-radius: 15px;
+        padding: 1.5rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .card.purple { background: #6d28d9; }
+    .card.dark { background: #475569; }
+    .card.black { background: #111827; }
+    .card.light {
+        background: #fff;
+        color: #333;
+        border: 1px solid #ccc;
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }   
+
+    .profile img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .profile h4 {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .profile p {
+        margin: 0;
+        font-size: 0.8rem;
+        opacity: 0.7;
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    .desc {
+        font-size: 0.9rem;
+        opacity: 0.9;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="testimonial-grid">
+        <div class="card purple">
+          <div class="profile">
+            <img src="https://i.pravatar.cc/40?u=1" alt="">
+            <div>
+              <h4>Daniel Clifford</h4>
+              <p>Verified Graduate</p>
+            </div>
+          </div>
+          <p class="title">I received a job offer mid-course...</p>
+          <p class="desc">"I was an EMT for many years... every penny’s worth."</p>
+        </div>
+      
+        <div class="card dark">
+          <div class="profile">
+            <img src="https://i.pravatar.cc/40?u=2" alt="">
+            <div>
+              <h4>Jonathan Walters</h4>
+              <p>Verified Graduate</p>
+            </div>
+          </div>
+          <p class="title">The team was very supportive...</p>
+          <p class="desc">"I started as a total newbie... by myself."</p>
+        </div>
+      
+        <div class="card light">
+          <div class="profile">
+            <img src="https://i.pravatar.cc/40?u=3" alt="">
+            <div>
+              <h4>Jeanette Harmon</h4>
+              <p>Verified Graduate</p>
+            </div>
+          </div>
+          <p class="title">An overall wonderful and rewarding experience</p>
+          <p class="desc">"Thank you for the wonderful experience..."</p>
+        </div>
+      
+        <div class="card black">
+          <div class="profile">
+            <img src="https://i.pravatar.cc/40?u=4" alt="">
+            <div>
+              <h4>Patrick Abrams</h4>
+              <p>Verified Graduate</p>
+            </div>
+          </div>
+          <p class="title">Awesome teaching support from TAs...</p>
+          <p class="desc">"The staff seem genuinely concerned... amazing people."</p>
+        </div>
+      
+        <div class="card light">
+          <div class="profile">
+            <img src="https://i.pravatar.cc/40?u=5" alt="">
+            <div>
+              <h4>Kira Whittle</h4>
+              <p>Verified Graduate</p>
+            </div>
+          </div>
+          <p class="title">Such a life-changing experience. Highly recommended!</p>
+          <p class="desc">"Before joining the bootcamp... 100% recommended."</p>
+        </div>
+      </div>
+      
+      
+</body>
+</html>

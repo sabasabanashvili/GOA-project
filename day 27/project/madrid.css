@@ -1,0 +1,158 @@
+h1 {
+    /* headigs */
+    text-align: center;
+    color: azure;
+    text-shadow: 0px 0px 10px yellow,
+    0px 0px 20px yellow,
+    0px 0px 40px yellow,
+    0px 0px 80px yellow;
+}
+    h2 {
+    text-align: center;
+    text-shadow: 0px 0px 10px blue,
+    0px 0px 20px blue,
+    0px 0px 40px blue,
+    0px 0px 80px blue;
+    } 
+ /* headings end */
+    p {
+    text-align: center;
+}
+ /* image designs */
+.imgs {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+
+
+}
+.imgs2 {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+
+}
+.imgs3 {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+
+}
+body {
+    background-color:goldenrod;
+}
+.imgs4 {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+
+}
+.imgs5 {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+
+}
+.imgs6 {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    /* image design end */
+
+}
+.backgrounds {
+    background-image: url(madrid\ logo.png);
+    background-size:1200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+button {
+    border-radius: 10%;
+}
+#yellow {
+    background-color: rgb(224, 224, 78);
+}
+h1 {
+    /* headigs */
+    text-align: center;
+    color: azure;
+    text-shadow: 0px 0px 10px yellow,
+    0px 0px 20px yellow,
+    0px 0px 40px yellow,
+    0px 0px 80px yellow;
+}
+    h2 {
+    text-align: center;
+    text-shadow: 0px 0px 10px blue,
+    0px 0px 20px blue,
+    0px 0px 40px blue,
+    0px 0px 80px blue;
+} 
+    /* headings end */
+    p {
+    text-align: center;
+    font-size: larger;
+    }
+ /* image designs */
+.imgs {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+
+
+}
+.imgs2 {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+
+}
+.imgs3 {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+
+}
+body {
+
+    background-image: url(11.webp);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+
+}
+.imgs4 {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+
+}
+.imgs5 {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+
+}
+.imgs6 {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+    /* image design end */
+
+.backgrounds {
+    background-image: url(11.webp);
+    background-size:1200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+button {
+    border-radius: 10%;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Tasks</title>
+  <style>
+    #box {
+      width: 50px;
+      height: 50px;
+      background: red;
+      position: absolute;
+      top: 100px;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="box"></div>
+
+  <script>
+    // 1. Countdown Timer
+    let countdown = 10;
+    const timer1 = setInterval(() => {
+      console.log(countdown);
+      if (countdown === 0) {
+        clearInterval(timer1);
+        console.log("Time's up!");
+      }
+      countdown--;
+    }, 1000);
+
+    // 2. Flashing Title
+    let toggleTitle = true;
+    const titleInterval = setInterval(() => {
+      document.title = toggleTitle ? "Hello" : "Goodbye";
+      toggleTitle = !toggleTitle;
+    }, 1000);
+    setTimeout(() => clearInterval(titleInterval), 6000);
+
+    // 3. Move a Box
+    let pos = 0;
+    const moveBox = setInterval(() => {
+      if (pos >= 100) clearInterval(moveBox);
+      pos += 10;
+      document.getElementById("box").style.left = pos + "px";
+    }, 200);
+
+    // 4. Random Number Logger
+    let randomCount = 0;
+    const randomLogger = setInterval(() => {
+      console.log(Math.floor(Math.random() * 10) + 1);
+      randomCount++;
+      if (randomCount === 5) clearInterval(randomLogger);
+    }, 1500);
+
+    // 5. Array to Uppercase
+    const words = ["hello", "world", "js"];
+    for (let word of words) {
+      console.log(word.toUpperCase());
+    }
+
+    // 6. Replace Middle Element
+    const nums = [5, 9, 3];
+    nums[1] = 0;
+    console.log(nums);
+
+    // 7. Add and Remove Elements
+    const arr = ["a", "b"];
+    arr.push("c");
+    arr.unshift("z");
+    arr.pop();
+    console.log(arr);
+
+    // 8. Average of Array
+    const values = [4, 8, 6, 2];
+    const average = values.reduce((a, b) => a + b, 0) / values.length;
+    console.log("Average:", average);
+
+    // 9. Reverse Array Manually
+    const reverseArr = ["x", "y", "z"];
+    for (let i = reverseArr.length - 1; i >= 0; i--) {
+      console.log(reverseArr[i]);
+    }
+
+    // 10. Loop with Index
+    const fruits = ["apple", "banana", "cherry", "date", "fig"];
+    for (let i = 0; i < fruits.length; i++) {
+      console.log(`Index ${i}: ${fruits[i]}`);
+    }
+  </script>
+</body>
+</html>

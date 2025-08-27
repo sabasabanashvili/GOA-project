@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS მაგალითები</title>
+</head>
+<body>
+
+    <!-- ღილაკი, რომელიც გამოვა alert-ის დახმარებით ასაკს -->
+    <button onclick="showAge()">კლიკი ასაკის გამოსაჩენად</button>
+
+    <br><br>
+
+    <!-- სურათი, რომელზეც დაკლიკებისას შეიცვლება src ატრიბუტი -->
+    <img id="myImage" src="image1.jpg" alt="Image" onclick="changeImage()" width="300">
+
+    <script>
+        // ფუნქცია, რომელიც alert-ის მეშვეობით გამოიყვანს ასაკს
+        function showAge() {
+            alert("თქვენი ასაკი: 25");
+        }
+
+        // ფუნქცია, რომელიც სურათის src-ს შეცვლის
+        function changeImage() {
+            document.getElementById("myImage").src = "image2.jpg";
+        }
+    </script>
+
+</body>
+</html>

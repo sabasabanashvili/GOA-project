@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Flexbox Example</title>
+<style>
+  .parent {
+    display: flex;
+    flex-direction: row; 
+    gap: 10px; 
+  }
+
+  .child {
+    flex: 1; 
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #000;
+  }
+
+
+  @media (max-width: 800px) {
+    .parent {
+      flex-direction: column; 
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="parent">
+  <div class="child">შვილი 1</div>
+  <div class="child">შვილი 2</div>
+  <div class="child">შვილი 3</div>
+</div>
+
+</body>
+</html>

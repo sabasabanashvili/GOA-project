@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sum Until 100</title>
+</head>
+<body>
+  <script>
+    let total = 0;
+    let number;
+
+    do {
+      number = parseFloat(prompt("შეიყვანეთ რიცხვი:"));
+      if (!isNaN(number)) {
+        total += number;
+      } else {
+        alert("გთხოვთ შეიყვანოთ რიცხვი!");
+      }
+    } while (total <= 100);
+
+    alert("ჯამმა გადააჭარბა 100-ს: " + total);
+  </script>
+</body>
+</html>

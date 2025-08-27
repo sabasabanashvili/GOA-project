@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumb Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        .image-container img {
+            width: 100px;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Thumbnail</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td class="image-container">
+                <img src="https://cdn.discordapp.com/attachments/1291074179780575303/1337860042539532419/thumb.png?ex=67aaf502&is=67a9a382&hm=b3c534226c83ba912b51ee6ecfb59a8e29a743fed3642d4a2e6727b3f6b16c49&" alt="Thumbnail Image">
+            </td>
+            <td>Sample thumbnail image displayed in a table.</td>
+        </tr>
+    </table>
+</body>
+</html>
+

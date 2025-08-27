@@ -1,0 +1,36 @@
+#hello {
+    text-decoration: underline;
+    text-align: center;
+    color: blue;
+}
+#world {
+    text-decoration: underline overline dotted;
+    text-align: left;
+    color: red;
+}
+#goal {
+    text-decoration: underline;
+    text-align: right;
+    color: purple;
+}
+#oriented {
+    text-decoration: overline;
+    color: green;
+    text-align: justify;
+}
+#academy {
+    text-decoration: underline line-through;
+    color: orange;
+    text-align: center;
+}
+#the {
+    text-decoration: underline overline;
+    color: teal;
+    text-align: left;
+}
+#best {
+    font-weight: bold;
+    text-decoration: underline;
+    color: gold;
+    text-align: center;
+}
