@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #0f1424;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .profile, .card {
+      background: #1c1f4a;
+      border-radius: 15px;
+      padding: 1.5rem;
+    }
+
+    .profile {
+      grid-row: span 2;
+      background: #5746ea;
+    }
+
+    .profile h2 {
+      margin: 1rem 0 0.5rem;
+    }
+
+    .card h3 {
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+
+    .card h1 {
+      margin: 0.5rem 0;
+      font-size: 2rem;
+    }
+
+    .card p {
+      font-size: 0.8rem;
+      color: #bbc0ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <p>Report for</p>
+      <h2>Jeremy Robson</h2>
+      <p>Daily<br><b>Weekly</b><br>Monthly</p>
+    </div>
+    <div class="card">
+      <h3>Work</h3>
+      <h1>32hrs</h1>
+      <p>Last Week - 36hrs</p>
+    </div>
+    <div class="card">
+      <h3>Play</h3>
+      <h1>10hrs</h1>
+      <p>Last Week - 8hrs</p>
+    </div>
+    <div class="card">
+      <h3>Study</h3>
+      <h1>4hrs</h1>
+      <p>Last Week - 7hrs</p>
+    </div>
+    <div class="card">
+      <h3>Exercise</h3>
+      <h1>4hrs</h1>
+      <p>Last Week - 5hrs</p>
+    </div>
+    <div class="card">
+      <h3>Social</h3>
+      <h1>5hrs</h1>
+      <p>Last Week - 10hrs</p>
+    </div>
+    <div class="card">
+      <h3>Self Care</h3>
+      <h1>2hrs</h1>
+      <p>Last Week - 2hrs</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Extensions Dashboard</title>
+  <style>
+
+    body {
+        background: #0e1323;
+        padding:40px;
+        font-family: 'Segoe UI', sans-serif;
+        color:white;
+        }
+
+    h2 {
+        margin-bottom: 20px;
+        }
+
+    .filter-buttons {
+        margin-bottom: 20px;
+        }
+
+    .filter-buttons button {
+        background: #1f263a;
+        border: none;
+        color: white;
+        padding: 8px 16px;
+        margin-right: 8px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.2s;
+        }
+
+    .filter-buttons button:hover {
+        background: #2a3555;
+        }
+
+    .extensions-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        }
+
+    .card {
+        background: #1c2235;
+        border-radius: 12px;
+        padding: 20px;
+        position: relative;
+        }
+
+    .card h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+        }
+
+    .card p {
+        font-size: 14px;
+        color: #aab3cf;
+        margin-bottom: 16px;
+        }
+
+    .card .remove-btn {
+        background: #ff4c4c;
+        border: none;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 12px;
+        }
+
+    /* Toggle switch */
+    .switch {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: inline-block;
+        width: 44px;
+        height: 24px;
+        }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #2b2f42;
+        transition: 0.4s;
+        border-radius: 24px;
+        }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 18px;
+        width: 18px;
+        left: 3px;
+        bottom: 3px;
+        background-color: #9ca3af;
+        transition: 0.4s;
+        border-radius: 50%;
+        }
+
+    .switch input:checked + .slider {
+        background-color: #3b82f6;
+        }
+
+    .switch input:checked + .slider:before {
+        transform: translateX(20px);
+        background-color: white;
+        }
+    /*icons*/
+    img{
+        width:50px;
+        height:50px;
+    }
+    /*search bar*/
+    #searchInput {
+        width: 100%;
+        max-width: 400px;
+        padding: 10px 16px;
+        border-radius: 8px;
+        border: none;
+        margin-bottom: 20px;
+        background: #1f263a;
+        color: white;
+        font-size: 14px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h2>Extensions List</h2>
+
+  <div class="filter-buttons">
+    <input type="text" id="searchInput" placeholder="Search extensions..." id="searchInput"/>
+    
+    <button>All</button>
+    <button>Active</button>
+    <button>Inactive</button>
+  </div>
+
+  <div class="extensions-grid">
+
+    <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="DevLens">
+      <h3>DevLens</h3>
+      <p>Inspect page layouts visually and easily.</p>
+      <button class="remove-btn">Remove</button>
+      <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="DevLens">
+      <h3>SpeedBoost</h3>
+      <p>Optimize browser usage and performance.</p>
+      <button class="remove-btn">Remove</button>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="DevLens">
+      <h3>stylespy</h3>
+      <p>instantly analyze and copy css from any webpage element.</p>
+      <button class="remove-btn">Remove</button>
+      <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="DevLens">
+      <h3>jsonwizard</h3>
+      <p>formaths validates and prettifies json responses in browser.</p>
+      <button class="remove-btn">Remove</button>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="DevLens">
+        <h3>tabmaster pro</h3>
+        <p>organizates browser tabs into groups and sessions.</p>
+        <button class="remove-btn">Remove</button>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+  
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="DevLens">
+        <h3>viewportbuddy</h3>
+        <p>simulates warious screes solutions directly within the browser.</p>
+        <button class="remove-btn">Remove</button>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+  
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="DevLens">
+        <h3>markup notes</h3>
+        <p>enables annotation and notes directly onto webpages for collaborative debbuging.</p>
+        <button class="remove-btn">Remove</button>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+  
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="DevLens">
+        <h3>gridguides</h3>
+        <p>overlay costumizable grinds and alignment guides on any webpage.</p>
+        <button class="remove-btn">Remove</button>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="DevLens">
+        <h3>pallete picker</h3>
+        <p>instantly extracts color palletes from any webpage.</p>
+        <button class="remove-btn">Remove</button>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+  
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="DevLens">
+        <h3>linkchecker</h3>
+        <p>scans and higlights broken links on any page.</p>
+        <button class="remove-btn">Remove</button>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+  
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="DevLens">
+        <h3>GridGuides</h3>
+        <p>Overlay customizable grid guides.</p>
+        <button class="remove-btn">Remove</button>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+  
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="DevLens">
+        <h3>ConsolePlus</h3>
+        <p>Enhanced browser console with themes.</p>
+        <button class="remove-btn">Remove</button>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="DevLens">
+        <h3>DevLens</h3>
+        <p>Inspect page layouts visually and easily.</p>
+        <button class="remove-btn">Remove</button>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+  
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="DevLens">
+        <h3>SpeedBoost</h3>
+        <p>Optimize browser usage and performance.</p>
+        <button class="remove-btn">Remove</button>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+  
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="DevLens">
+        <h3>GridGuides</h3>
+        <p>Overlay customizable grid guides.</p>
+        <button class="remove-btn">Remove</button>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+  
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="DevLens">
+        <h3>ConsolePlus</h3>
+        <p>Enhanced browser console with themes.</p>
+        <button class="remove-btn">Remove</button>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+  </div>
+
+</body>
+</html>
